@@ -1,24 +1,22 @@
 import "@styles/globals.css";
 
 export const metadata = {
-    title: "Prompter",
-    description: "Discover & Share AI Prompts"
-}
+  title: "Prompter",
+  description: "Discover & Share AI Prompts",
+};
 
-const RootLayout = ({children}) => {
+const RootLayout = ({ children }) => {
   return (
-    <html lang='en'>
-        <body>
-            <div className='main'>
-                <div className="gradient" />
-            </div>
+    <html lang="en">
+      <body>
+        <div className="main">
+          <div className="gradient" />
+        </div>
 
-            <main className='app'>
-                {children}
-            </main>
-        </body>
+        <main className="app">{children}</main>
+      </body>
     </html>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
