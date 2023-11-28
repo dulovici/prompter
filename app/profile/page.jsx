@@ -11,9 +11,13 @@ const MyProfile = () => {
 
   const [posts, setPosts] = useState([]);
 
-  const handleEdit = () => {};
+  const handleEdit = () => {
+    console.log("edit");
+  };
 
-  const handleDelete = async () => {};
+  const handleDelete = () => {
+    console.log("delete");
+  };
 
   const fetchPosts = async () => {
     const response = await fetch(`/api/users/${session?.user.id}/posts`);
