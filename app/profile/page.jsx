@@ -8,14 +8,15 @@ import Profile from "@components/Profile";
 
 const MyProfile = () => {
   const { data: session } = useSession();
+  const router = useRouter();
 
   const [posts, setPosts] = useState([]);
 
-  const handleEdit = () => {
-    console.log("edit");
+  const handleEdit = (post) => {
+    router.push(`/update-prompt?id=${post._id}`);
   };
 
-  const handleDelete = () => {
+  const handleDelete = (post) => {
     console.log("delete");
   };
 
